@@ -21,3 +21,7 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Trilha HTML', 'Trilha do curso', 1, 'https://upload.wikimedia.org/wikipedia/commons/2/27/Switch-course-book.svg', 1, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Fórum', 'Tire suas dúvidas', 2, 'https://upload.wikimedia.org/wikipedia/commons/2/27/Switch-course-book.svg', 2, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives', 'Lives exclusivas para apoio', 3, 'https://upload.wikimedia.org/wikipedia/commons/2/27/Switch-course-book.svg', 0, 1);
+
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 1', 'Capítulo de início', 1, 'https://upload.wikimedia.org/wikipedia/commons/2/27/Switch-course-book.svg', 1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 2', 'Capítulo de meio', 2, 'https://upload.wikimedia.org/wikipedia/commons/2/27/Switch-course-book.svg', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capítulo 3', 'Capítulo de final', 3, 'https://upload.wikimedia.org/wikipedia/commons/2/27/Switch-course-book.svg', 1, 2);
