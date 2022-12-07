@@ -43,3 +43,12 @@ INSERT INTO tb_task (id, description, question_Count, approval_Count, weight, du
 
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);
+
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Prazo Tarefa: Favor Revisar!', TIMESTAMP WITH TIME ZONE '2020-07-30T13:07:00Z', true,'/offers/1/resource/1/sections/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Prazo 2 Tarefa: Favor Revisar!', TIMESTAMP WITH TIME ZONE '2020-08-15T13:07:00Z', true, '/offers/1/resource/1/sections/1', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Prazo 3 Tarefa: Favor Revisar!', TIMESTAMP WITH TIME ZONE '2020-08-20T13:07:00Z', false, '/offers/1/resource/1/sections/1', 1);
+
+INSERT INTO tb_deliver (uri, moment, status, feedback, correct_Count, user_id, offer_id, lesson_id) VALUES ('https://github.com/GabrielAlmeida29/dslearn.project', TIMESTAMP WITH TIME ZONE '2020-08-21T13:07:00Z', 1, 'Muito Bom!', 5, 1, 1, 4);
+
+ 
+
