@@ -1,5 +1,9 @@
 package com.dslearn.repositories;
 
-public class TopicRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.dslearn.entities.Topic;
+
+public interface TopicRepository extends JpaRepository<Topic, Long> {
 
 }

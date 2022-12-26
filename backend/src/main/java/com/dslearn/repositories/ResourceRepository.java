@@ -1,5 +1,9 @@
 package com.dslearn.repositories;
 
-public class ResourceRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.dslearn.entities.Resource;
+
+public interface ResourceRepository extends JpaRepository<Resource,Long>{
 
 }

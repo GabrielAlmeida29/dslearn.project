@@ -1,5 +1,9 @@
 package com.dslearn.repositories;
 
-public class NotificationRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.dslearn.entities.Notification;
+
+public interface NotificationRepository extends JpaRepository<Notification, Long>{
 
 }

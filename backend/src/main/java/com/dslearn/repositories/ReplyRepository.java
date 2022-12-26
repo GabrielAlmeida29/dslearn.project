@@ -1,5 +1,9 @@
 package com.dslearn.repositories;
 
-public class ReplyRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.dslearn.entities.Reply;
+
+public interface ReplyRepository extends JpaRepository<Reply, Long>{
 
 }
