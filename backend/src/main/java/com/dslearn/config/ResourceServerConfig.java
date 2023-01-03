@@ -23,10 +23,6 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 	private JwtTokenStore tokenStore;
 	
 	private static final String[] PUBLIC = {"/oauth/token"};
-	
-	private static final String[] OPERATOR_OR_ADMIN = {"/products/**", "/categories/**"};
-	
-	private static final String[] ADMIN = {"/users/**"};
 
 	@Override
 	public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
@@ -41,9 +37,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 		
 		http.authorizeRequests()
 		.antMatchers(PUBLIC).permitAll()
-		.antMatchers(HttpMethod.GET, OPERATOR_OR_ADMIN).permitAll()
-		.antMatchers(OPERATOR_OR_ADMIN).hasAnyRole("OPERATOR", "ADMIN")
-		.antMatchers(ADMIN).hasRole("ADMIN")
 		.anyRequest().authenticated();
 	}
+	
 }
